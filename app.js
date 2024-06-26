@@ -1,10 +1,12 @@
 const express = require("express")
+const cors = require('cors');
 const mongoose = require("mongoose")
 const router = require("./src/routes/main")
-const app = express()
 const port = 8080
 const uri = "mongodb+srv://admin:password00@clusterbikereview.tvk4z1o.mongodb.net/db_reviewbike?retryWrites=true&w=majority&appName=ClusterBikeReview";
 
+const app = express()
+app.use(cors()); // Use cors middleware
 
 mongoose.connect(uri)
     .then(() => console.log('MongoDB connected'))
