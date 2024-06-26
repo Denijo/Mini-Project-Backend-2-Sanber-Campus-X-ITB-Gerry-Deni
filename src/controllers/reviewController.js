@@ -37,6 +37,19 @@ const createReview = async (req, res) => {
     }
 }
 
+const registration = async (req, res) => {
+    const review = new Review({
+        bikeModel: req.body.bikeModel,
+        rating: req.body.rating,
+        comment: req.body.comment
+    });
+    try {
+        const newReview = await review.save();
+        res.status(201).json(newReview);
+    } catch (err) {
+        res.status(400).json({ message: err.message });
+    }
+}
 
 
 // UPDATE a review
