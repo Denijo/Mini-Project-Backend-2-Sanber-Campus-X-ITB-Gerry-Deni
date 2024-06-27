@@ -12,10 +12,10 @@ mongoose.connect(process.env.MONGODB_URI)
     .catch(err => console.error('MongoDB connection error:', err));
 
 app.use(express.json())
-app.use("/api", router)
+app.use("/", router)
 
 app.listen(port, () => {
     console.log(`app listening on port ${port}`)
 })
 
-module.exports = index
+module.exports = app
