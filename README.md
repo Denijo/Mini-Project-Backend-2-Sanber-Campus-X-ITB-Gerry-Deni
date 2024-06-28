@@ -24,8 +24,15 @@ Make sure you have the following before starting:
    git clone https://github.com/username/repo-name.git
    cd repo-name
 
-### **Install dependencies**
-npm install
+2. **Install dependencies**
+    ```bash
+    npm install
+
+
+3. **Create a .env file in the root directory of the project and add the following environment variables:**
+   ```bash
+    PORT=3000
+    MONGODB_URI=your_mongodb_connection_string
 
 ### **Create a .env file in the root directory of the project and add the following environment variables:**
 PORT=3000
@@ -33,6 +40,7 @@ MONGODB_URI=your_mongodb_connection_string
 
 ## **Running the Project**
 To run the project in production mode, use:
+
 npm start
 
 ## **API Endpoints**
