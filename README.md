@@ -4,10 +4,9 @@ This is a REST API project built using **Express** and **MongoDB**. The project 
 
 ## **Features**
 
-- CRUD endpoints for a specific entity (e.g., users, products, etc.)
-- Input data validation
-- Proper error handling
-- Clean and organized folder structure
+- CRUD endpoints for a specific entity (e.g., users, profile, bike model, review, register etc.)
+- Cors
+- JWT Auth Middleware 
 
 ## **Prerequisites**
 
