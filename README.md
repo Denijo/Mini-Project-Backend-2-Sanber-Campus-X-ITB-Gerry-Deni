@@ -34,14 +34,11 @@ Make sure you have the following before starting:
     PORT=3000
     MONGODB_URI=your_mongodb_connection_string
 
-### **Create a .env file in the root directory of the project and add the following environment variables:**
-PORT=3000
-MONGODB_URI=your_mongodb_connection_string
-
 ## **Running the Project**
 To run the project in production mode, use:
-
-npm start
+  ```bash
+   npm start
+   ```
 
 ## **API Endpoints**
 
